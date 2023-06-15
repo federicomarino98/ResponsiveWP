@@ -23,7 +23,9 @@
 
     display: flex;
     justify-content: center;
+
     background-color: #f2f2f2;
+  
 }
 
 .contenitoreProgetti{
@@ -47,7 +49,7 @@ footer {
     .contenitoreLogo{
         position: absolute;
         height: 150px;
-        width: 125px;
+        width: 150px;
 
         top:10px;
         left:10px;
@@ -153,14 +155,14 @@ footer {
 #box_uno div span:nth-child(3){
     /* Definizione faccia laterale due */
     transform: rotateY(90deg) translate3d(0,0,calc(-1*var(--x_dim)));
-    background-color: aqua;
+    background-color: #C0C0C0;
     background: rgb(60, 39, 46);
 }
 
 #box_uno div span:nth-child(4){
     /* Definizione faccia sul retro */
     transform: rotateY(0deg) translate3d(0,0,calc(-1*var(--x_dim)));
-    background: paleturquoise;
+    background: #C0C0C0;
 }
 
 #box_uno div span:nth-child(5){
@@ -178,7 +180,7 @@ footer {
     width: calc(2*var(--x_dim));
     height: calc(2*var(--x_dim));
     transform: rotateX(90deg) translate3d(0,0,0);
-    background: blue;
+    background: #C0C0C0;
 }
 
 /* -----BOX-DUE----- */
@@ -220,19 +222,19 @@ footer {
 #box_due div span:nth-child(2){
     /* Definizione faccia laterale uno */
     transform: rotateY(90deg) translate3d(0,0,var(--x_dim));
-    background: pink url(Immagini_Logo/m-sup-logo.png);
+    background: #C0C0C0 url(Immagini_Logo/m-sup-logo.png);
 }
 
 #box_due div span:nth-child(3){
     /* Definizione faccia laterale due */
     transform: rotateY(90deg) translate3d(0,0,calc(-1*var(--x_dim)));
-    background: palevioletred;
+    background: #C0C0C0;
 }
 
 #box_due div span:nth-child(4){
     /* Definizione faccia sul retro */
     transform: rotateY(0deg) translate3d(0,0,calc(-1*var(--x_dim)));
-    background: violet;
+    background: #C0C0C0;
 }
 
 #box_due div span:nth-child(5){
@@ -241,7 +243,7 @@ footer {
     height: calc(2*var(--x_dim));
 
     transform: rotateX(90deg) translate3d(0,0,var(--x_dim));
-    background: black url(Immagini_Logo/f-logo.png);
+    background: #C0C0C0 url(Immagini_Logo/f-logo.png);
 }
 
 #box_due div span:nth-child(6){
@@ -424,7 +426,7 @@ footer {
 
     .contenitoreTitolo{
         position: absolute;
-        width: calc(100% - 125px);
+        width: calc(100% - 150px);
         right: 0;
 
         display: flex;
