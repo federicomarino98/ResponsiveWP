@@ -1,0 +1,456 @@
+<html lang="en">
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Home | Federico Marino Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+</head>
+
+<body>
+
+    <div class="contenitoreInfo">
+
+        <div class="contenitoreLogo">
+
+            <!-- Content for the sidebar LOGO-->
+            <div style="--j:1;" id="box_uno">
+
+                <div class="move_div">
+
+                    <span><li class="box_button"> <a href="work.html"> Work </a> </li></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span>
+                        <div class="red">
+                            <div class="orange"> 
+                                <div class="yellow">
+                                    <div class="green">
+                                        <div class="blue">
+                                            <div class="violet">
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <span></span>
+                    
+                </div>
+            </div>
+
+
+            <div style="--j:0;"  id="box_due">
+                <div >
+                    <span><li class="box_button"> <a href="index.html"> Info </a> </li></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+
+   
+            <!-- Content for the sidebar NAV. Links-->
+            <div class="container_nav">
+                <div class="sidebar_nav">
+    
+                    <ul>
+                    <li><a href="#section1"> <h2>Industrial <br> Problem </h2> </a></li>
+                    <li><a href="#section2"> <h2>Proposed <br> Solution </h2> </a></li>
+                    <li><a href="#section3"> <h2>Industrial <br> Case </h2> </a></li>
+                    <li><a href="#section4"> <h2>Model <br> Details </h2> </a></li>  
+                    </ul>
+    
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="contenitoreProgetti">
+
+            <div class="contenitoreHeader">
+
+                <div class="contenitoreTitolo">
+                    <div class="allineamentoTesto">
+                        <h1 class="titoloHeader"> Work. </h1> 
+                    </div>
+                </div>
+
+                <div class="contenitoreData">
+                    <div class="allineamentoTesto">
+                        <h1 class="titoloData"> 22.05.2023 </h1> 
+                    </div>
+                </div>
+
+                <div class="contenitoreVersione">
+                    <div class="allineamentoTesto">
+                        <h1 class="titoloVersione"> v. 0.01 </h1>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <section class="titolo_tesi">
+                <!-- Content for the first section -->
+                <h1 class="h1_tesi"> Setup time optimization of SMT <br> pick-and-place machines for PCB assembly </h1> 
+            </section>
+
+  
+    
+            <section class="Industrial_Problem">
+    
+                <div id="section1" class="div_tesi" >
+    
+                    <h2 class="h2_tesi">Industrial Problem</h2>
+    
+                    <p class="p_tesi">
+                        This section presents an <b>optimization project</b> that han been developed in the Marelli Corbetta plat.
+                        <br> Marelli is an Italian multinational company specialized in the supply of technological products and
+                        systems in the automotive industry. <br>
+                        
+                        <br> The company's performances are deeply affected by the chip shortage phenomenon. Not only many 
+                        shifts are unemployed due to the temporary lack of microchips, but also Marelli found itself 
+                        forced to reduce production batch size to quickly satisfy the needs of the different customers. 
+                        In this problematic context, the impact that setups have on <b>multy-product</b> lines increased dramatically and raised the 
+                        necessity of a quick way to find the  <b>optimal schedule </b> between different products which <b>minimizes </b>
+                        the overall <b>set-up time</b> of the line. 
+                        
+                    </p>
+
+                </div>
+
+            </section>
+
+
+    
+            <section class="Proposed Solution">
+    
+                <div id="section2" class="div_tesi">
+        
+                    <h2 class="h2_tesi">Proposed Solution</h2>
+    
+                    <p class="p_tesi">
+    
+                    A <b>mathematical model</b> of the problem and a <b>Python optimization tool</b> able to solve it are presented. 
+                    The deployed solution follows two macro steps: <br> <br>
+    
+                    - <b>Input analysis: </b>  Pdf files reporting the different informations of the PCBs, 
+                    as the eletronics components needed, are analysed and than structured as an Excel database with all 
+                    the data needed to initialize the variables of the model.  <br> <br>
+                    
+                    - <b>Optimization Model: </b> After the user set production parameters according to the production plan,
+                    the optimization tool computes the optimal schedule that minimizes set-up times. A visual representation of the sequence
+                    is provided with a Gantt chart. <br> 
+                    </p>
+    
+                </div>
+    
+            </section>
+    
+  
+            <section class=" Industrial Case">
+
+                <!-- Content for the first section -->
+                <div id="section3" class="div_tesi">
+  
+                    <h2 class="h2_tesi"> Industrial Case</h2>
+  
+                    <p class="p_tesi">
+                        The industrial case presents the study that has been carried out with one SMT line in the Corbetta
+                        plant. In particular the analysis focused on the SMT_04 line where 21 product types are processed.  
+                    </p>
+  
+                    <h3 class="h3_tesi" > Reference System</h3>
+  
+                    <p class="p_tesi">The mathematical model is focused on the optimization of the setup time for the 
+                        pick-and-place machines, which are part of the SMT (Surface Mounting Thecnology) lines used for the assembly of PCBs 
+                        for the automotive industry. <br>  <br> The raw PCB is bought from an external 
+                        supplier, while the PCB assembly process, from PCB to PCBA ,  is instead accomplished internally. 
+                        The same PCB enters the line twice: once to process 
+                        the top part and once to process the bottom part, since the pick-and-place machine can work on 
+                        only one side at the time. <br> <br> The first operation is the laser marking, where a laser source
+                        engraves on each PCB a data matrix code. It is a unique serial number that will be read by each 
+                        equipment in the line to guarantee the traceability of the board in all the process steps. <br> <br>
+                        Then a serigraphic machine performs the screen printing. Stencil and squeegees are used to determine 
+                        the pattern with the necessary holes for the deposition of the soldering paste on the PCB. Different 
+                        PCBs require a different serigraphic mask, thus, as the product in production changes, a setup of the 
+                        machine is needed. The SPI  is used as a testing equipment to measure the quantity of solder paste on 
+                        each pad, in terms of area, volume and offset. <br> <br> The pick-and-place machines
+                        is used to pick electronic components one by one from a feeder using a vacuum 
+                        nozzle and position them on the PCB. As new PCBs are put in production, all their necessary 
+                        component must be loaded through reels in the feeder, and this could be a constraint to the setup 
+                        of the machine. <br> <br> The PCBs are then moved to the reflow oven, where the solder paste reflows,
+                        soldering the components to the PCB pads. The thermal profile is different for each solder paste alloy 
+                        and the specific product to be soldered. Depending on the thermal inertia, the setup between one
+                        product and the other can be quite long. <br> <br> Finally, at the end of SMT line each PCB is inspected 
+                        with an AOI  system, that checks if all the components are present and well soldered using the 
+                        reconstruction of the images with proper algorithms. This step concludes the assembly process and
+                        the PCBA can be mounted on the desired products.
+                    </p>
+  
+                    <div class="figure_container">
+                        <img class="img_tesi" src="Immagini_Marelli/Picture 1.png">
+                        <figcaption class="figcaption_tesi">Figure 1: SMT line reference system</figcaption>
+                    </div>
+  
+  
+                    <h3 class="h3_tesi" > Problem Description</h3>
+  
+
+                    <p class="p_tesi" > The scope of the project is to act on the production scheduling of SMT04 pick-and-place 
+                        machine, in order to minimize the number and duration of the setups and, thus, maximize the utilization 
+                        of the production resources. <br> <br>
+
+                        Each PCB, produced on the SMT_04 line ranges from few hundred to up to 1500 components. 
+                        Beeing the components mounted multiple times a shared among differet products, the PCBs processed 
+                        on SMT04 require overall 395 different component types.
+  
+  
+                        <br> <br>
+                        A strong focus is posed on the setup, while considerations about the 
+                        optimum batch size are neglected. This is due to the fact that Marelli, in the previously described 
+                        context, is forced to produce with smaller batches and shorter production cycles to cope with the 
+                        stringent demand from the clients, maintaining the same mix. <br>
+                        To accomplish the objective, a better investigation of the main determinants of the setup is needed. 
+                        From the data available and considering the problem simplification for this analysis, two kinds of 
+                        setups can be discerned: 
+                    </p>
+  
+                    <ul class="tesi_ul">
+                        <li>a component setup, which comprises the required operations to replace one feeder with another 
+                            for the component changeover. In fact, when the operator loads the new program on the 
+                            pick-and-place, if all the right components needed to produce the required PCB are not already 
+                            on the machine, the line stops, and an operator manually loads the respective feeders. This 
+                            step is repeated every time a PCB requires a component that is not loaded on the machine. 
+                            The component setup time is assumed to be fixed for each component and is approximately equal
+                            to 2 minutes.
+                        </li>
+                        <li>a machine setup, which comprises the required operations to perform when switching to 
+                            another family of PCBs to be manufactured. More specifically, when two consecutive boards have 
+                            different panel widths, the conveyor needs to be adjusted. The required time is approximately 
+                            equal to 25 minutes.
+                        </li>
+                    </ul>
+  
+                    <p class="p_tesi">Consequently, the objective becomes to determine the PCB sequence and the component 
+                        loading order that minimise the total setup time. In the modelling of the problem, several 
+                        phisical and logical constraints must be respected. <br> <br> In Figure 2 the  schedule computed 
+                        by the model, considering a production plan with 7 different PCB families,  that minimize the total set-up time of the line:
+                    </p>
+  
+                    <div class="figure_container">
+                        <img class="img_tesi" src="Immagini_Marelli/Picture 2.png">
+                        <figcaption class="figcaption_tesi">Figure 2: Gantt Chart</figcaption>
+                    </div>
+                
+  
+                    <p class="p_tesi">The solution deployed has a number of advantages for Marelli:</p>
+
+                    <ul class="tesi_ul">
+
+                        <li>It leads to drastic setup time savings. According to the calculations, 
+                            the solution is able to cut setup times by about 47% with respect to 
+                            the as-is situation. The optimization of the scheduling also provides 
+                            an average increase of the OEE by 9%.</li>
+
+                        <li> It is open software solution. Zero software licence cost.</li>
+        
+                        <li> It is scalable. It can be easily readapted to different SMT line models.</li>
+        
+                        <li> It has a user-friendly interface, quick and easy to use for the operators.</li>
+
+                        <li> It has a low elaboration time. </li>
+                    
+                    </ul>
+
+                </div>
+
+            </section>
+  
+  
+            <section class="contenuto_tesi">
+  
+                <!-- Content for the first section -->
+                <div id="section4" class="div_tesi">
+  
+                    <h2 class="h2_tesi">Model Details</h2>
+  
+                    <p class="p_tesi"> This section present a detail description of the mathematical model 
+                        developement and its implementation. </p>
+  
+                    <h3 class="h3_tesi">Mathematical Formulation</h3>
+  
+                    <p class="p_tesi"> The mathematicl model ends to be a non linear programming problem with all the 
+                        considered variable belonging to binary space. For this reason a non linear solver has been 
+                        used to get the problem solution. </p>
+  
+                    <div>
+                        <h4 class="h4_tesi">Index Definitions:</h4>
+                        <div class="equazioni_tesi">\( i \) - Component type index, \( i = 1, \ldots, n \).</div>
+                        <div class="equazioni_tesi">\( j \) - Board family index, \( j = 1, \ldots, k \).</div>
+                        <div class="equazioni_tesi">\( k \) - Board position in the sequence (job index), \( k = 1, \ldots, m \).</div>
+                        <div class="equazioni_tesi">\( v \) - Module index, \( v = 1, \ldots, r \).</div>
+                    </div>
+        
+                    <div>
+                        <h4 class="h4_tesi">Parameter Definitions:</h4>
+                        <div class="equazioni_tesi">\( m \) - Total number of PCBs.</div>
+                        <div class="equazioni_tesi">\( n \) - Total number of required components.</div>
+                        <div class="equazioni_tesi">\( r \) - Total number of modules (8).</div>
+                        <div class="equazioni_tesi">\( B_v \) - Capacity (number of slots) of each module \( v \).</div>
+                        <div class="equazioni_tesi">\( C_{i,j} \) - Component-matrix. Values are 1 if component \( i \) is required in the production of family \( j \), 0 otherwise.</div>
+                        <div class="equazioni_tesi">\( M_{i,v} \) - Component-module matrix. Values are 1 if component \( i \) can be loaded on module \( v \), 0 otherwise.</div>
+                        <div class="equazioni_tesi">\( S_i \) - Slots occupied vector. Specifies the number of occupied slots in the module for each component type \( i \).</div>
+                        <div class="equazioni_tesi">\( E \) - Setup time for the changeover of each component (2 minutes).</div>
+                        <div class="equazioni_tesi">\( F \) - Setup time for the adjustment of the conveyors (25 minutes).</div>
+                        <div class="equazioni_tesi">\( W_j \) - PCB wideness vector. Contains the different widths of the different product families.</div>
+                    </div>
+  
+                    <div>
+                        <h4 class="h4_tesi">Variable Definitions:</h4>
+                        <div class="equazioni_tesi">\( x_{i,k} \) - 1 if component type \( i \) is loaded at job \( k \), 0 otherwise.</div>
+                        <div class="equazioni_tesi">\( y_{j,k} \) - 1 if family \( j \) is assembled as the \( k \)th job, 0 otherwise.</div>
+                        <div class="equazioni_tesi">\( a_{i,k} \) - 1 if component type \( i \) has to be uploaded on the machine after the \( k \)th job, 0 otherwise.</div>
+                        <div class="equazioni_tesi">\( d_k \) - 1 if the conveyor has to be adjusted after job \( k \), 0 otherwise.</div>
+                        <div class="equazioni_tesi">\( P_{i,v,k} \) - 1 if component \( i \) is uploaded on module \( v \) for the \( k \)th job, 0 otherwise.</div>
+                    </div>
+  
+                    <div>
+                        <h4 class="h4_tesi"> Objective Definition</h4>
+                        <div class="equazioni_tesi">(i) \( \min (E \cdot (\sum_{k=0}^{m} \sum_{i=1}^{n} a_{ik}) + F \cdot \sum_{k=0}^{m} d_k \))</div>
+                    </div>
+        
+                    <div>
+        
+                        <h4 class="h4_tesi">Constraints Definition</h4>
+                        <div class="equazioni_tesi">(ii) \( \sum_{i=1}^ {n} x_{i,k} \cdot M_{i,v} \cdot S_i \cdot P_{i,v,k} \leq B_v, \quad k=0,\ldots,m+1; v=1,\ldots,r \)</div>
+                        <div class="equazioni_tesi">(iii) \( \sum_{v=1}^{r} P_{i,v,k} \cdot M_{i,v} = 1, \quad k=0,\ldots,m+1; i=1,\ldots,n \)</div>
+                        <div class="equazioni_tesi">(iv) \( x_{i,k+1} - x_{i,k} \leq a_{i,k} \), where \( i = 1, \ldots, n \) and \( k = 0, \ldots, m \)</div>
+                        <div class="equazioni_tesi">(v) \(C_{i,j} \cdot y_{j,k} \leq x_{i,k}\), where \(i = 1, \ldots, n\) and \(k = 0, \ldots, m+1\)</div>
+                        <div class="equazioni_tesi">(vi) \( \sum_{j=0}^{m+1} y_{j,k} = 1 \), where \( k = 0, \ldots, m+1 \)</div>
+                        <div class="equazioni_tesi">(vii) \( \sum_{k=0}^{m+1} y_{j,k} = 1 \), where \( j = 0, \ldots, m+1 \)</div>
+                        <div class="equazioni_tesi">(viii) \(y_{j,k} = 1\), where \(j = k = 0\)</div>
+                        <div class="equazioni_tesi">(ix) \(y_{j,k} = 1\), where \(j = k = m+1\)</div>
+                        <div class="equazioni_tesi">(ix) \( \left| \sum_{j=0}^{m+1} (W_j \cdot y_{j,k+1}) - \sum_{j=0}^{m+1} (W_j \cdot y_{j,k}) \right| \leq M \cdot d_k \), where \( k = 0, \ldots, m \)</div>
+                        <div class="equazioni_tesi">(xi) \(x_{i,k}\), \(y_{j,k}\), \(a_{i,k}\), \(d_k\), and \(P_{i,v,k}\) belonging to the set \(\{0,1\}\)</div>
+        
+                    </div>
+        
+                    <ul class="tesi_ul">
+        
+                        <li> Minimize the total setup time, that corresponds to the time
+                            to unload and load a feeder multiplied by the number of component 
+                            changeovers plus the time to adjust the conveyor multiplied by 
+                            the number of adjustments of the conveyors. 
+                        </li>
+            
+                        <li>Available space constraint: for each job k and for each module v, 
+                            the number of slots occupied by the loaded components on each module
+                            must be lower than the total module capacity (45 slots). Furthermore, 
+                            since the same component type i can be loaded on more than one module,
+                            the P_(i,v,k) variable dynamically selects one module, among the 
+                            allowed ones (determined in M_(i,v)), on which the component i will be 
+                            loaded according to the available capacity. It is important to note that 
+                            the multiplication between variable P_(i,v,k) and x_ik   
+                            makes the problem non linear.
+                        </li>
+        
+                        <li>Allocation of the component to the module: this constraint makes sure 
+                            that, at job k, the component type i is loaded only on one module v, 
+                            among the allowed ones (determined in M_(i,v)), and not on multiple modules.
+                        </li>
+            
+                        <li>Component changeover constraint: ai,k+1 = 1 if component i is not currently 
+                            loaded but it going to be necessary for the next PCB to be manufactured. 
+                            In other words, A component changeover is performed every time a needed 
+                            component to process the PCB is not already loaded on the machine.
+                        </li>
+                        
+                        <li>Required components constraint: if PCB type j is assembled as the kth job 
+                            on the machine (y_(j,k)  =1), then all the component types required to process 
+                            PCB type j must be loaded on the machine.
+                        </li>
+        
+                        <li>Position constraint (a): Each job can be assigned to only one PCB family.</li>
+                        <li>Position constraint (b): Each PCB family can be assigned to only one job. </li>
+        
+                        <li>Initial configuration constraint: This constraint imposes the 
+                            PCB family from which the production cycle starts and is used together 
+                            with (ix) to impose the cyclicity logic in the formulation. The last PCB
+                            that has been processed in the previous schedule is given as input, to 
+                            identify the components that are already loaded on the machine.
+                        </li>
+        
+                        <li>Final configuration constraint: The last PCB that is assumed to be processed, is 
+                            the same from which the loading started. It is used together with (8) to impose 
+                            the cyclicity constraints logic in the mathematical formulation.  
+                        </li>
+        
+                        <li>Conveyor adjustment constraint: dk=1 if the conveyor after the job k needs to be 
+                            adjusted because the width of the next PCB to be processed is different from the 
+                            width of the current one. 
+                        </li>
+                        <li>Binary constraints</li>
+
+                    </ul>
+  
+         
+                </div>
+  
+                <div id="section4" class="div_tesi">
+  
+                    <h3 class="h3_tesi">Model Implementation</h3>
+  
+                    <p class="p_tesi"> This section presents the flow diagram showing the logical functioning 
+                        of the  optimization tool which is completely developed with Python programming 
+                        language. Two macro steps can be considered:
+                    </p>
+  
+                    <ul class="tesi_ul">
+                        <li>PREPROCESSING, which is in charge of the input data analysis, cleaning, and preparation. </li>
+                        <li>OUTPUT COMPUTATION, which is necessary for computing a solution to the problem.</li>
+                    </ul>
+  
+  
+                    <div class="figure_container">
+                        <img class="img_tesi" src="Immagini_Marelli/Picture 3.png" >
+                        <figcaption>Figure 3: Model Implementation</figcaption>
+                    </div>
+              
+                </div>
+  
+            </section>
+
+            <section>
+
+                <footer>
+
+                    <!-- Content for the footer -->
+                    <div class="footer_container">
+                        <p>&copy; 2023 Work | Federico Marino Portfolio. </p>   
+                    </div>
+                
+                </footer>
+
+            </section>
+
+        </div>
+    
+    </div>
+
+
+
+</body>
+</html>

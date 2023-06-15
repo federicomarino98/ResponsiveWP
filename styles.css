@@ -1,0 +1,1155 @@
+
+/*************************************************************
+ * Page Structure
+ * Author: Federico Marino
+ * Date: May 21, 2023
+ *************************************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenitoreInfo{
+    position: relative;
+    display: flex;
+}
+
+.contenitoreLogo{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+.contenitoreProgetti{
+    position: absolute;
+    width: calc(100% - 200px);
+    right: 0px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media all and (max-width: 850px) {
+
+    .contenitoreLogo{
+        position: absolute;
+        height: 150px;
+        width: 125px;
+
+        top:10px;
+        left:10px;
+        z-index: 1;
+    }
+
+    .contenitoreProgetti{
+        width: 100%;
+    }
+
+}
+
+/*************************************************************
+ * Side Bar LOGO
+ * Author: Federico Marino
+ * Date: May 21, 2023
+ *************************************************************/
+
+
+:root{
+    /* Dimensione Cubo */
+    --x_dim: 40px;
+}
+
+#box_uno, #box_due{
+    /* Posizione e dimensioni cubo */
+    top: 180px;
+
+    position: absolute;
+    width: calc(2*var(--x_dim));
+    height: var(--x_dim);
+    transform-style: preserve-3d;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+    transform: rotateX(-30deg) rotateY(330deg) translateY(calc((var(--j) * 40px))) ;
+}
+
+.box_button {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_button a {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 26px;
+    text-decoration-line: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+/* -----BOX-UNO----- */
+
+
+#box_uno div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.6s;
+}
+
+.move_div:hover{
+    transform: rotateY(30deg) translateY(20px);
+}
+
+#box_uno div span {
+    /* Definizione della faccia generica span*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box_uno div span:nth-child(1){
+    /* Definizione faccia frontale */
+    transform: rotateY(0deg) translate3d(0,0,var(--x_dim));
+    background: #C0C0C0;
+    border: 3px solid #737373;
+}
+
+#box_uno div span:nth-child(2){
+    /* Definizione faccia laterale uno */
+    transform: rotateY(90deg) translate3d(0,0,var(--x_dim));
+    background: url(Immagini_Logo/m-inf-logo.png);
+}
+
+#box_uno div span:nth-child(3){
+    /* Definizione faccia laterale due */
+    transform: rotateY(90deg) translate3d(0,0,calc(-1*var(--x_dim)));
+    background-color: aqua;
+    background: rgb(60, 39, 46);
+}
+
+#box_uno div span:nth-child(4){
+    /* Definizione faccia sul retro */
+    transform: rotateY(0deg) translate3d(0,0,calc(-1*var(--x_dim)));
+    background: paleturquoise;
+}
+
+#box_uno div span:nth-child(5){
+    /* Definizione faccia sul retro */
+    width: calc(2*var(--x_dim));
+    height: calc(2*var(--x_dim));
+
+    transform: rotateX(90deg) translate3d(0,0,var(--x_dim));
+    background: #DFDFDF;
+    border: 3px solid #7F7F7F;
+}
+
+#box_uno div span:nth-child(6){
+    /* Definizione faccia sul retro */
+    width: calc(2*var(--x_dim));
+    height: calc(2*var(--x_dim));
+    transform: rotateX(90deg) translate3d(0,0,0);
+    background: blue;
+}
+
+/* -----BOX-DUE----- */
+
+#box_due div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.6s;
+}
+
+#box_due div:hover{
+    transform: rotateY(30deg) translateY(-20px);
+}
+
+#box_due div span {
+    /* Definizione della faccia generica span*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box_due div span:nth-child(1){
+    /* Definizione faccia frontale */
+    transform: rotateY(0deg) translate3d(0,0,var(--x_dim));
+    background: #C0C0C0;
+    border: 3px solid #7F7F7F;
+}
+
+#box_due div span:nth-child(2){
+    /* Definizione faccia laterale uno */
+    transform: rotateY(90deg) translate3d(0,0,var(--x_dim));
+    background: pink url(Immagini_Logo/m-sup-logo.png);
+}
+
+#box_due div span:nth-child(3){
+    /* Definizione faccia laterale due */
+    transform: rotateY(90deg) translate3d(0,0,calc(-1*var(--x_dim)));
+    background: palevioletred;
+}
+
+#box_due div span:nth-child(4){
+    /* Definizione faccia sul retro */
+    transform: rotateY(0deg) translate3d(0,0,calc(-1*var(--x_dim)));
+    background: violet;
+}
+
+#box_due div span:nth-child(5){
+    /* Definizione faccia sul retro */
+    width: calc(2*var(--x_dim));
+    height: calc(2*var(--x_dim));
+
+    transform: rotateX(90deg) translate3d(0,0,var(--x_dim));
+    background: black url(Immagini_Logo/f-logo.png);
+}
+
+#box_due div span:nth-child(6){
+    /* Definizione faccia sul retro */
+    width: calc(2*var(--x_dim));
+    height: calc(2*var(--x_dim));
+    transform: rotateX(90deg) translate3d(0,0,0);
+    background: #7F7F7F;
+}
+
+/*************************************************************
+ * Side Bar LOGO RainBow
+ * Author: Federico Marino
+ * Date: May 21, 2023
+ *************************************************************/
+
+.red{
+    width: 100%;
+    height: 100%;
+    border: 6px solid rgb(221, 48, 54);
+}
+
+.orange{
+    width: 100%;
+    height: 100%;
+    border: 6px solid rgb(228, 146, 53);
+}
+
+.yellow{
+    width: 100%;
+    height: 100%;
+    border: 6px solid rgb(242, 242, 80);
+}
+
+.green{
+    width: 100%;
+    height: 100%;
+    border: 6px solid rgb(88, 187, 55);
+}
+
+.blue{
+    width: 100%;
+    height: 100%;
+    border: 6px solid rgb(40,38,128);
+}
+
+.violet{
+    width: 100%;
+    height: 100%;
+    background:  rgb(89, 28, 147);
+}
+
+
+@media all and (max-width: 850px) {
+    #box_uno, #box_due{
+        top: 40px;}
+
+}
+
+
+/*************************************************************
+ * Side Bar NAVIGATION LINKS
+ * Author: Federico Marino
+ * Date: May 21, 2023
+ *************************************************************/
+
+.container_nav {
+    top: 380px;
+    position: absolute;
+    display: flex;
+}
+      
+.sidebar_nav ul {
+    list-style-type:none;
+    padding: 0;
+}
+
+.sidebar_nav ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar_nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: gray;
+}
+
+.sidebar_nav a.active {
+    font-size: 20px; 
+    color: black;
+    font-weight: 500;
+}
+
+
+@media all and (max-width: 850px) {
+
+    .container_nav {
+        display: none;
+    }
+
+}
+
+
+/*************************************************************
+ * Header
+ * Author: Federico Marino
+ * Date: May 21, 2023
+ *************************************************************/
+
+
+ .contenitoreHeader {
+    position:relative;
+    display: flex;
+   
+    height: 280px;
+    width: 100%;
+
+    margin-bottom: 20px ;
+
+    /* background-color: bisque; */
+}
+
+.contenitoreTitolo{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+}
+
+.titoloHeader{
+    font-size: 150px;
+    font-weight: 400;
+}
+
+.contenitoreData{
+    width: 25%;
+    height: 100%;
+
+    display: flex;
+    justify-content: right;
+    align-items: last baseline;
+
+    /* background-color: brown; */
+}
+
+.titoloData{
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.contenitoreVersione{
+    width:25%;
+    height: 100%;
+
+    display: flex;
+    justify-content: left;
+    align-items: last baseline;
+
+    /* background-color: blueviolet; */
+}
+
+.titoloVersione{
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    padding: 20px;
+}
+
+
+@media all and (max-width: 850px) {
+
+    .contenitoreHeader {
+        height: 150px;
+        background-color: #f2f2f2;
+    }
+
+    .contenitoreTitolo{
+        position: absolute;
+        width: calc(100% - 125px);
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titoloHeader{
+        font-size: 110px;
+    }
+    .contenitoreVersione{
+        display: none;
+    }
+    .contenitoreData{
+        display:none;
+    }
+
+}
+
+@media all and (max-width: 400px) {
+
+    .titoloHeader{
+        font-size: 60px;
+    }
+
+}
+
+/*************************************************************
+ * Work - Project section
+ * Author: Federico Marino
+ * Date: May 21, 2023
+ *************************************************************/
+
+.contenitoreProgetto{
+    position: relative;
+    height: 800px;
+    width: 100%;
+
+    /* Centraggio div interno */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    /* background-color: yellow; */
+}
+
+.marginiProgetto{
+    position: relative;
+    width: 80%;
+    height: 80%;
+
+    border-radius: 10px;
+
+    background-color: wheat;
+}
+
+.titoloProgetto{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.titoloProgetto h3{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.tipoProgetto{
+    position:absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.tipoProgetto h4 {
+    font-weight: 400;
+}
+
+.annoProgetto{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.annoProgetto h5 {
+    font-weight: 400;
+}
+
+.immagineProgetto{
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    bottom: 10px;
+}
+
+.immagineProgetto img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.bottoneProgetto {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    border: 3px solid white;
+    background-color: transparent;
+
+    text-decoration: none;
+    overflow: hidden;
+
+    z-index: 10;
+    transition: transform 0.3s;
+}
+
+.bottoneProgetto:hover {
+    transform: scale(1.2);
+}
+
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 21px;
+    height: 21px;
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
+/*************************************************************
+ * Work - Project section Tesi
+ * Author: Federico Marino
+ * Date: May 21, 2023
+ *************************************************************/
+
+ .testoAnimato {
+    position: absolute;
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 100%; 
+    width: 100%; 
+    /* background-color: #FF6347; */
+} 
+  
+.testoAnimato span  {
+    padding: 25px;
+
+    width: 100%;
+    height: 1em;
+    line-height: 1em;
+    
+    text-align: center;
+    justify-content: center;
+}
+
+.testoAnimato span:nth-child(1) {
+    animation: slideText1 8s infinite linear;
+}
+
+.testoAnimato span:nth-child(2) {
+    animation: slideText2 12s infinite linear;
+}
+
+.testoAnimato span:nth-child(3) {
+    animation: slideText1 10s infinite linear;
+}
+  
+@keyframes slideText1 {
+    0% {
+    transform: translateX(0%);
+    }
+    25% {
+    transform: translateX(1%);
+    }
+    50% {
+    transform: translateX(0%);
+    }
+    75% {
+    transform: translateX(-1%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideText2 {
+    0% {
+    transform: translateX(0%);
+    }
+    25% {
+    transform: translateX(-1%);
+    }
+    50% {
+    transform: translateX(0%);
+    }
+    75% {
+    transform: translateX(1%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.testoAnimato span h1 {
+    font-size: 40px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+@media all and (max-width: 1400px) {
+
+    .contenitoreProgetto{
+        height: 400px;
+    }
+
+    .marginiProgetto{
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+        justify-content: center;
+
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .titoloProgetto{
+        position: relative;
+        text-align: center;
+        top: unset;
+        left: unset;
+
+        padding-bottom: 40px;
+        padding-left: 10px;
+    }
+    
+    .titoloProgetto h3{
+        font-size: 35px;
+    }
+
+    .bottoneProgetto{
+        position: relative;
+        right: unset;
+        width: 75px;
+        height: 75px;
+        border: 4px solid white;
+    }
+
+    .arrow-right {
+        width: 30px;
+        height: 30px;
+    }
+
+    .immagineProgetto{
+        display: none;
+    }
+
+    .tipoProgetto{
+        position: relative;
+        bottom: unset;
+        left:unset;
+        padding-bottom: 15px;
+    }
+
+    .tipoProgetto h4 {
+        font-size: 18px;
+    }
+
+    .annoProgetto{
+        position: relative;
+        bottom: unset;
+        right: unset;
+        padding-bottom: 15px;
+    }
+
+    .testoAnimato{
+        display: none;
+    }
+
+}
+
+
+/*************************************************************
+ * Info - Time Line section
+ * Author: Federico Marino
+ * Date: May 21, 2023
+ *************************************************************/
+
+ .h1_info{
+    font-size: 40px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.p_info{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.contenitoreTimeLine{
+    padding: 1rem;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    max-width: 850px;
+
+    /* background-color: #FF7F50; */
+}
+
+.top_section{
+    text-align: center;
+    padding-bottom:5rem;
+    max-width: 700px;
+    margin: 0 auto;
+
+    /* padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 30px;
+    background-color: wheat;
+    border-radius: 10px; */
+}
+
+.timeline {
+    position: relative;
+    min-height: 150px;
+
+    /* background-color: palevioletred; */
+}
+
+.line {
+    position: absolute;
+    z-index: 2;
+    left: calc(50% - 1px);
+    width: 2px;
+    top:0 ;
+    bottom:0;
+    background-color: rgb(60, 60, 60);
+    
+    /* background-color: yellow; */
+}
+
+.line:before,
+.line:after{
+    position: absolute;
+    display: block;
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    left: 50%;
+    border-radius: 50%;
+    background-color: rgb(60, 60, 60);;
+    transform: translateX(-50%);
+
+    /* background-color: red; */
+} 
+
+.line:after{
+    bottom: -16px;
+}
+
+.timeline_section {
+    display: flex;
+    opacity: 0;
+    transform: translateX(-25%);
+    transition: 600ms ease;
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+    min-height: 300px;
+
+    /* background-color: aquamarine; */
+}
+
+.timeline_section:nth-child(odd){
+    display: flex;
+    flex-direction: row-reverse;
+    transform: translateX(25%);
+}
+
+.bead {
+    position: absolute;
+    display: block;
+    height: 0.6rem;
+    width: 0.6rem;
+    border-radius: 50%;
+    background-color: rgb(60, 60, 60);
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+
+    /* background-color: violet; */
+}
+
+.content {
+    width: calc(50% - 2rem);
+
+    /* background-color: aqua; */
+} 
+
+.show-me:nth-child(n){
+    transform: none;
+    opacity: 1;
+}
+
+
+@media all and (max-width: 850px){
+
+    .p_info{
+        text-align: left;
+    }
+
+    .line{
+        left:0
+    }
+
+    .bead {
+        left: 1px;
+      
+    }
+
+    .content {
+        width: 100%;
+    } 
+
+    .timeline_section {
+        transform: translateX(-5%);
+  
+    }
+    
+    .timeline_section:nth-child(odd){
+        transform: none;
+    }
+
+    .top_section{
+        padding-bottom:1rem;
+
+    }
+    
+} 
+
+/*************************************************************
+ * Info - Skill Table
+ * Author: Federico Marino
+ * Date: May 21, 2023
+ *************************************************************/
+
+.contenitoreTabella{
+    display: flex;
+    justify-content: center;
+
+    /* background-color: aqua; */
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+
+    /* background-color: palevioletred; */
+}
+  
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+  
+th {
+    background-color: wheat;
+}
+
+
+/*************************************************************
+ * Info - Contacts
+ * Author: Federico Marino
+ * Date: May 21, 2023
+ *************************************************************/
+
+.profile_img{
+    width: 80px;
+    border-radius: 50%;
+}
+
+.linkedin_logo{
+    width: 50px;
+}
+
+.contenitoreContatti{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    /* background-color: #FF6347; */
+}
+
+.contenitoreInformazioni{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    /* background-color: yellow; */
+}
+
+@media all and (max-width:760px){
+
+    .contenitoreContatti{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenitoreInformazioni{
+        padding-top: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+        align-items: center;
+    }
+
+}
+
+/*************************************************************
+ * Tesi impaginazione
+ * Author: Federico Marino
+ * Date: May 21, 2023
+ *************************************************************/
+
+ .h1_tesi{
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center;
+    padding: 50px;
+
+    /* background-color: burlywood; */
+}
+
+.h2_tesi {
+    font-size: 45px;
+    font-weight: 400;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    /* background-color: darkgreen; */
+}
+
+.h3_tesi {
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  
+    /* background-color: gold; */
+}
+
+.h4_tesi {
+    font-size: 22px;
+    font-weight: 300;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+    /* background-color: hotpink; */
+}
+
+.div_tesi{
+    text-align: justify;
+    text-justify: inter-word;
+    padding-top: 50px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 50px;
+
+    /* background-color: violet; */
+}
+
+.p_tesi{
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    /* background-color: aqua; */
+}
+
+.tesi_ul{
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 2;
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 50px;
+    list-style:lower-roman;
+
+    /* background-color: yellow; */
+}
+
+.figure_container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    /* background-color: #FF7F50; */
+}
+
+.figure_container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    max-width: 80%;
+}
+
+.figure_container figcaption {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    text-align: center;
+    font-style: italic;
+}
+
+.table_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    /* background-color: crimson; */
+}
+
+.table_tesi table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table_tesi th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.table_tesi th {
+    background-color: #f2f2f2;
+}
+
+.equazioni_tesi {
+    font-size: 20px;
+    padding-bottom: 35px;
+    /* background-color: aqua; */
+}
+
+
+@media all and (max-width:750px){
+
+    .h1_tesi{
+        font-size: 40px;
+        padding:0px;
+        text-align: center;
+    }
+
+    .h2_tesi {
+        font-size: 35px;
+        padding-bottom: 10px;
+    }
+
+    .h3_tesi{
+        font-size: 25px;
+        padding-top: 20px;
+        padding-bottom: 2px;
+    }
+
+    .h4_tesi {
+        font-size: 20px;
+    }
+
+    .p_tesi{
+        padding-top: 0px;
+    }
+    
+    .div_tesi{
+        padding: 0px;
+        text-align: left;
+    }
+
+    .equazioni_tesi {
+        font-size: 18px;
+        padding-bottom: 25px;
+        padding-left:10px ;
+    }
+
+    .figure_container img {
+        padding-top: 50px;
+        max-width: 80%;
+    }
+    
+    .tesi_ul{
+        font-size: 19px;
+        padding-left: 35px;
+        padding-right: 20px;
+    }
+
+    .table_tesi th, td {
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+
+  
