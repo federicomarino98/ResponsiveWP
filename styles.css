@@ -849,7 +849,8 @@ footer {
 @media all and (max-width: 850px){
 
     .p_info{
-        text-align: left;
+        padding-top: 20px;
+        text-align: center;
     }
 
     .line{
