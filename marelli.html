@@ -298,53 +298,53 @@
   
                     <div>
                         <h4 class="h4_tesi">Index Definitions:</h4>
-                        <div class="equazioni_tesi">\( i \) - Component type index, \( i = 1, \ldots, n \).</div>
-                        <div class="equazioni_tesi">\( j \) - Board family index, \( j = 1, \ldots, k \).</div>
-                        <div class="equazioni_tesi">\( k \) - Board position in the sequence (job index), \( k = 1, \ldots, m \).</div>
-                        <div class="equazioni_tesi">\( v \) - Module index, \( v = 1, \ldots, r \).</div>
+                        <div class="equazioniMarelli">\( i \) - Component type index, \( i = 1, \ldots, n \).</div>
+                        <div class="equazioniMarelli">\( j \) - Board family index, \( j = 1, \ldots, k \).</div>
+                        <div class="equazioniMarelli">\( k \) - Board position in the sequence (job index), \( k = 1, \ldots, m \).</div>
+                        <div class="equazioniMarelli">\( v \) - Module index, \( v = 1, \ldots, r \).</div>
                     </div>
         
                     <div>
                         <h4 class="h4_tesi">Parameter Definitions:</h4>
-                        <div class="equazioni_tesi">\( m \) - Total number of PCBs.</div>
-                        <div class="equazioni_tesi">\( n \) - Total number of required components.</div>
-                        <div class="equazioni_tesi">\( r \) - Total number of modules (8).</div>
-                        <div class="equazioni_tesi">\( B_v \) - Capacity (number of slots) of each module \( v \).</div>
-                        <div class="equazioni_tesi">\( C_{i,j} \) - Component-matrix. Values are 1 if component \( i \) is required in the production of family \( j \), 0 otherwise.</div>
-                        <div class="equazioni_tesi">\( M_{i,v} \) - Component-module matrix. Values are 1 if component \( i \) can be loaded on module \( v \), 0 otherwise.</div>
-                        <div class="equazioni_tesi">\( S_i \) - Slots occupied vector. Specifies the number of occupied slots in the module for each component type \( i \).</div>
-                        <div class="equazioni_tesi">\( E \) - Setup time for the changeover of each component (2 minutes).</div>
-                        <div class="equazioni_tesi">\( F \) - Setup time for the adjustment of the conveyors (25 minutes).</div>
-                        <div class="equazioni_tesi">\( W_j \) - PCB wideness vector. Contains the different widths of the different product families.</div>
+                        <div class="equazioniMarelli">\( m \) - Total number of PCBs.</div>
+                        <div class="equazioniMarelli">\( n \) - Total number of required components.</div>
+                        <div class="equazioniMarelli">\( r \) - Total number of modules (8).</div>
+                        <div class="equazioniMarelli">\( B_v \) - Capacity (number of slots) of each module \( v \).</div>
+                        <div class="equazioniMarelli">\( C_{i,j} \) - Component-matrix. Values are 1 if component \( i \) is required in the production of family \( j \), 0 otherwise.</div>
+                        <div class="equazioniMarelli">\( M_{i,v} \) - Component-module matrix. Values are 1 if component \( i \) can be loaded on module \( v \), 0 otherwise.</div>
+                        <div class="equazioniMarelli">\( S_i \) - Slots occupied vector. Specifies the number of occupied slots in the module for each component type \( i \).</div>
+                        <div class="equazioniMarelli">\( E \) - Setup time for the changeover of each component (2 minutes).</div>
+                        <div class="equazioniMarelli">\( F \) - Setup time for the adjustment of the conveyors (25 minutes).</div>
+                        <div class="equazioniMarelli">\( W_j \) - PCB wideness vector. Contains the different widths of the different product families.</div>
                     </div>
   
                     <div>
                         <h4 class="h4_tesi">Variable Definitions:</h4>
-                        <div class="equazioni_tesi">\( x_{i,k} \) - 1 if component type \( i \) is loaded at job \( k \), 0 otherwise.</div>
-                        <div class="equazioni_tesi">\( y_{j,k} \) - 1 if family \( j \) is assembled as the \( k \)th job, 0 otherwise.</div>
-                        <div class="equazioni_tesi">\( a_{i,k} \) - 1 if component type \( i \) has to be uploaded on the machine after the \( k \)th job, 0 otherwise.</div>
-                        <div class="equazioni_tesi">\( d_k \) - 1 if the conveyor has to be adjusted after job \( k \), 0 otherwise.</div>
-                        <div class="equazioni_tesi">\( P_{i,v,k} \) - 1 if component \( i \) is uploaded on module \( v \) for the \( k \)th job, 0 otherwise.</div>
+                        <div class="equazioniMarelli">\( x_{i,k} \) - 1 if component type \( i \) is loaded at job \( k \), 0 otherwise.</div>
+                        <div class="equazioniMarelli">\( y_{j,k} \) - 1 if family \( j \) is assembled as the \( k \)th job, 0 otherwise.</div>
+                        <div class="equazioniMarelli">\( a_{i,k} \) - 1 if component type \( i \) has to be uploaded on the machine after the \( k \)th job, 0 otherwise.</div>
+                        <div class="equazioniMarelli">\( d_k \) - 1 if the conveyor has to be adjusted after job \( k \), 0 otherwise.</div>
+                        <div class="equazioniMarelli">\( P_{i,v,k} \) - 1 if component \( i \) is uploaded on module \( v \) for the \( k \)th job, 0 otherwise.</div>
                     </div>
   
                     <div>
                         <h4 class="h4_tesi"> Objective Definition</h4>
-                        <div class="equazioni_tesi">(i) \( \min (E \cdot (\sum_{k=0}^{m} \sum_{i=1}^{n} a_{ik}) + F \cdot \sum_{k=0}^{m} d_k \))</div>
+                        <div class="equazioniMarelli">(i) \( \min (E \cdot (\sum_{k=0}^{m} \sum_{i=1}^{n} a_{ik}) + F \cdot \sum_{k=0}^{m} d_k \))</div>
                     </div>
         
                     <div>
         
                         <h4 class="h4_tesi">Constraints Definition</h4>
-                        <div class="equazioni_tesi">(ii) \( \sum_{i=1}^ {n} x_{i,k} \cdot M_{i,v} \cdot S_i \cdot P_{i,v,k} \leq B_v, \quad k=0,\ldots,m+1; v=1,\ldots,r \)</div>
-                        <div class="equazioni_tesi">(iii) \( \sum_{v=1}^{r} P_{i,v,k} \cdot M_{i,v} = 1, \quad k=0,\ldots,m+1; i=1,\ldots,n \)</div>
-                        <div class="equazioni_tesi">(iv) \( x_{i,k+1} - x_{i,k} \leq a_{i,k} \), where \( i = 1, \ldots, n \) and \( k = 0, \ldots, m \)</div>
-                        <div class="equazioni_tesi">(v) \(C_{i,j} \cdot y_{j,k} \leq x_{i,k}\), where \(i = 1, \ldots, n\) and \(k = 0, \ldots, m+1\)</div>
-                        <div class="equazioni_tesi">(vi) \( \sum_{j=0}^{m+1} y_{j,k} = 1 \), where \( k = 0, \ldots, m+1 \)</div>
-                        <div class="equazioni_tesi">(vii) \( \sum_{k=0}^{m+1} y_{j,k} = 1 \), where \( j = 0, \ldots, m+1 \)</div>
-                        <div class="equazioni_tesi">(viii) \(y_{j,k} = 1\), where \(j = k = 0\)</div>
-                        <div class="equazioni_tesi">(ix) \(y_{j,k} = 1\), where \(j = k = m+1\)</div>
-                        <div class="equazioni_tesi">(ix) \( \left| \sum_{j=0}^{m+1} (W_j \cdot y_{j,k+1}) - \sum_{j=0}^{m+1} (W_j \cdot y_{j,k}) \right| \leq M \cdot d_k \), where \( k = 0, \ldots, m \)</div>
-                        <div class="equazioni_tesi">(xi) \(x_{i,k}\), \(y_{j,k}\), \(a_{i,k}\), \(d_k\), and \(P_{i,v,k}\) belonging to the set \(\{0,1\}\)</div>
+                        <div class="equazioniMarelli">(ii) \( \sum_{i=1}^ {n} x_{i,k} \cdot M_{i,v} \cdot S_i \cdot P_{i,v,k} \leq B_v, \quad k=0,\ldots,m+1; v=1,\ldots,r \)</div>
+                        <div class="equazioniMarelli">(iii) \( \sum_{v=1}^{r} P_{i,v,k} \cdot M_{i,v} = 1, \quad k=0,\ldots,m+1; i=1,\ldots,n \)</div>
+                        <div class="equazioniMarelli">(iv) \( x_{i,k+1} - x_{i,k} \leq a_{i,k} \), where \( i = 1, \ldots, n \) and \( k = 0, \ldots, m \)</div>
+                        <div class="equazioniMarelli">(v) \(C_{i,j} \cdot y_{j,k} \leq x_{i,k}\), where \(i = 1, \ldots, n\) and \(k = 0, \ldots, m+1\)</div>
+                        <div class="equazioniMarelli">(vi) \( \sum_{j=0}^{m+1} y_{j,k} = 1 \), where \( k = 0, \ldots, m+1 \)</div>
+                        <div class="equazioniMarelli">(vii) \( \sum_{k=0}^{m+1} y_{j,k} = 1 \), where \( j = 0, \ldots, m+1 \)</div>
+                        <div class="equazioniMarelli">(viii) \(y_{j,k} = 1\), where \(j = k = 0\)</div>
+                        <div class="equazioniMarelli">(ix) \(y_{j,k} = 1\), where \(j = k = m+1\)</div>
+                        <div class="equazioniMarelli">(ix) \( \left| \sum_{j=0}^{m+1} (W_j \cdot y_{j,k+1}) - \sum_{j=0}^{m+1} (W_j \cdot y_{j,k}) \right| \leq M \cdot d_k \), where \( k = 0, \ldots, m \)</div>
+                        <div class="equazioniMarelli">(xi) \(x_{i,k}\), \(y_{j,k}\), \(a_{i,k}\), \(d_k\), and \(P_{i,v,k}\) belonging to the set \(\{0,1\}\)</div>
         
                     </div>
         

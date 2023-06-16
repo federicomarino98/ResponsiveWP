@@ -23,9 +23,7 @@
 
     display: flex;
     justify-content: center;
-
     background-color: #f2f2f2;
-  
 }
 
 .contenitoreProgetti{
@@ -36,6 +34,11 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
+}
+
+.footer_container{
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 
 footer {
@@ -58,6 +61,11 @@ footer {
 
     .contenitoreProgetti{
         width: 100%;
+    }
+
+    .footer_container{
+        padding-top: 10px;
+        padding-bottom: 5px;
     }
 
 }
@@ -1039,7 +1047,7 @@ th {
     line-height: 2;
     padding: 25px;
     padding-left: 100px;
-    padding-right: 50px;
+    padding-right: 80px;
     list-style:lower-roman;
 
     /* background-color: yellow; */
@@ -1057,14 +1065,14 @@ th {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 80px;
-    max-width: 80%;
+    padding-top: 60px;
+    max-width: 95%;
 }
 
 .figure_container figcaption {
     position: relative;
     padding-top: 30px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     text-align: center;
     font-style: italic;
 }
@@ -1074,6 +1082,8 @@ th {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     /* background-color: crimson; */
 }
@@ -1093,10 +1103,21 @@ th {
     background-color: #f2f2f2;
 }
 
-.equazioni_tesi {
+.equazioniTesi {
+    font-size: 25px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+
+    /* background-color: aqua; */
+}
+
+.equazioniMarelli{
     font-size: 20px;
     padding-bottom: 35px;
-    /* background-color: aqua; */
+
+    /* background-color: red; */
 }
 
 
