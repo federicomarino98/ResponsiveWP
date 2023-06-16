@@ -329,21 +329,21 @@
   
                     <div>
                         <h4 class="h4_tesi"> Objective Definition</h4>
-                        <div class="equazioniMarelli">(i) \( \min (E \cdot (\sum_{k=0}^{m} \sum_{i=1}^{n} a_{ik}) + F \cdot \sum_{k=0}^{m} d_k \))</div>
+                        <div class="equazioniMarelli">(i) min (\( E \cdot (\sum_{k=0}^{m} \sum_{i=1}^{n} a_{ik}) + F \cdot \sum_{k=0}^{m} d_k \))</div>
                     </div>
         
                     <div>
         
                         <h4 class="h4_tesi">Constraints Definition</h4>
-                        <div class="equazioniMarelli">(ii) \( \sum_{i=1}^ {n} x_{i,k} \cdot M_{i,v} \cdot S_i \cdot P_{i,v,k} \leq B_v, \quad k=0,\ldots,m+1; v=1,\ldots,r \)</div>
-                        <div class="equazioniMarelli">(iii) \( \sum_{v=1}^{r} P_{i,v,k} \cdot M_{i,v} = 1, \quad k=0,\ldots,m+1; i=1,\ldots,n \)</div>
+                        <div class="equazioniMarelli">(ii) \( \sum_{i=1}^ {n} x_{i,k} \cdot M_{i,v} \cdot S_i \cdot P_{i,v,k} \leq B_v\), where \( k=0,\ldots,m+1\) and \( v=1,\ldots,r \)</div>
+                        <div class="equazioniMarelli">(iii) \( \sum_{v=1}^{r} P_{i,v,k} \cdot M_{i,v} = 1\), where \( k=0,\ldots,m+1\) and \( i=1,\ldots,n \)</div>
                         <div class="equazioniMarelli">(iv) \( x_{i,k+1} - x_{i,k} \leq a_{i,k} \), where \( i = 1, \ldots, n \) and \( k = 0, \ldots, m \)</div>
                         <div class="equazioniMarelli">(v) \(C_{i,j} \cdot y_{j,k} \leq x_{i,k}\), where \(i = 1, \ldots, n\) and \(k = 0, \ldots, m+1\)</div>
                         <div class="equazioniMarelli">(vi) \( \sum_{j=0}^{m+1} y_{j,k} = 1 \), where \( k = 0, \ldots, m+1 \)</div>
                         <div class="equazioniMarelli">(vii) \( \sum_{k=0}^{m+1} y_{j,k} = 1 \), where \( j = 0, \ldots, m+1 \)</div>
                         <div class="equazioniMarelli">(viii) \(y_{j,k} = 1\), where \(j = k = 0\)</div>
                         <div class="equazioniMarelli">(ix) \(y_{j,k} = 1\), where \(j = k = m+1\)</div>
-                        <div class="equazioniMarelli">(ix) \( \left| \sum_{j=0}^{m+1} (W_j \cdot y_{j,k+1}) - \sum_{j=0}^{m+1} (W_j \cdot y_{j,k}) \right| \leq M \cdot d_k \), where \( k = 0, \ldots, m \)</div>
+                        <div class="equazioniMarelli">(ix) \( \left| \sum_{j=0}^{m+1} (W_j \cdot y_{j,k+1}) - \sum_{j=0}^{m+1} (W_j \cdot y_{j,k}) \right| \)\(\leq M \cdot d_k \), where \( k = 0, \ldots, m \)</div>
                         <div class="equazioniMarelli">(xi) \(x_{i,k}\), \(y_{j,k}\), \(a_{i,k}\), \(d_k\), and \(P_{i,v,k}\) belonging to the set \(\{0,1\}\)</div>
         
                     </div>
