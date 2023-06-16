@@ -140,12 +140,12 @@
         
                     <p class="p_tesi">
                     This thesis aims to provide a comprehensive methodology for 
-                    studying a <b>generic activity project</b>  in presence of 
+                    studying a <b>generic activity project</b>  in the presence of 
                     variability. In particular, the <b>completion time </b> value 
                     at risk <b>(VAR)</b>  will be investigated. <br><br> The 
                     activity project is modeled as a continuous-time Markov chain, 
                     where each activity follows a phase-type distribution. The 
-                    proposed methodology enables the analyticla estimation of the 
+                    proposed methodology enables the analytical estimation of the 
                     <b> distribution of project duration </b> through the solution 
                     of an ordinary differential equations system. <br><br> Employing 
                     a <b>newly developed Python tool</b>, a fast assessment of the 
@@ -170,10 +170,10 @@
                     risk for a maintenance and repairing activities project at the Marelli Corbetta plant. 
                     Marelli is an Italian multinational company specializing in the supply of technology 
                     products and systems in the automotive industry. The activities considered are 
-                    important to mantain in optimal condition the production lines in the plant.
+                    important to maintain in optimal condition the production lines in the plant.
                     </p>
         
-                    <p class="p_tesi">In the following table are presented maintenance and repairing activities that emerged 
+                    <p class="p_tesi">In the following table are presented maintenance and repair activities that emerged 
                     from 19 to 23 January 2023 in the company. 
                     </p>
         
@@ -267,8 +267,8 @@
                   
           
                     <p class="p_tesi"> The input analysis for time duration is estimated starting from company's 
-                        Coswin database. Five phases distribution are considered which garantee good approximation
-                        without overcomplicatig the model. Finally, is possible to run the Python tool to assess the 
+                        Coswin database. Distributions with five are considered which guarantee good approximation
+                        without overcomplicating the model. Finally, is possible to run the Python tool to assess the 
                         completion time value at risk of the considered network.
                     </p>
         
@@ -281,7 +281,7 @@
                     </ul>
                       
                     <p class="p_tesi">This enables a quick evaluation of the completion time value at risk at 95%
-                        probability. In other words the project will reach completion under 7.73 [h] in 95% of the times.
+                        probability. In other words, the project will reach completion under 7.73 [h] 95% of the time.
                         Being the methodology fast, it can be used to continuously monitor and control pending activities
                         while some new activity enters the evaluation, and some others reach completion.
                     </p>
@@ -296,8 +296,8 @@
                 <div id="section4" class="div_tesi">
           
                     <h2 class="h2_tesi">Model Details</h2>
-                    <p class="p_tesi"> This section present a detail description of the methodology
-                        used. To guide the explenation the simple network in Figure 1 is considered.
+                    <p class="p_tesi"> This section presents a detailed description of the methodology
+                        used. To guide the explanation the simple network in Figure 1 is considered.
                     </p>
                     <h3 class="h3_tesi">From activity network to state space network</h3>
             
@@ -337,7 +337,7 @@
                     </ul>
         
                     <p class="p_tesi"> A system state is a row vector containing the specific state 
-                        of each activity composing the network. For the activity network in figure A1, 
+                        of each activity composing the network. For the activity network in Figure 1, 
                         the starting state is [1,1,0,0,0], as activities 1 and 2 start immediately 
                         while the other three activities remain pending. 
                     </p>
@@ -360,9 +360,9 @@
                         final guideline for the state space network computation. Every activity must be 
                         completed to finish the project, but multiple activity completion paths exist. The 
                         result of this computation algorithm will always be the completion of all activities, 
-                        with each path consisting of a number of steps equal to the number of activities in 
+                        with each path consisting of several steps equal to the number of activities in 
                         the project, each involving the completion of activities in a different order. Figure 
-                        A2 shows the state space network for the activity network in figure A1. <br>System 
+                        A2 shows the state space network for the activity network in Figure 1. <br>System 
                         states are represented by network nodes, while the arcs represent the activity that terminates.  
                     </p>
             
@@ -458,8 +458,8 @@
           
           
                       
-                    <p class="p_tesi">The dynamics captured by the O (s', s, i) 
-                        term can be summarized into three main areas:</p>
+                    <p class="p_tesi">The dynamics captured by the term O (s', s, i) 
+                        can be summarized into three main areas:</p>
           
                     <ul class="tesi_ul">
                         <li>Completion of activity 'i': This means that activity i 
@@ -469,14 +469,14 @@
                         during this transition and continue to run after. This emphasizes 
                         the memory property of the model for activities that are not 
                         terminated at state s'.</li>
-                        <li>Starting new activities triggered by the conclusion of activity 
+                        <li>Starting new activities triggered by the conclusion of the activity 
                         i: This means that the phase-types linked to the newly started 
                         activities need to be initialized.</li>
                     </ul>
           
                     <p class="p_tesi"> The result of this computation is the infinitesimal generator
                         matrix describing the execution of the initial activity network.
-                        In figure 4 the Markov activity network, derived from the infinitesimal 
+                        In Figure 4 the Markov activity network, derived from the infinitesimal 
                         generator matrix, describing the execution of the initial activity network 
                         considering activity distributed according to general phase-type distribution is reported. 
                     </p>
@@ -548,7 +548,7 @@
                     <h3 class="h3_tesi">Model performance</h3>
           
                     <p class="p_tesi">Finally, the developed approach has been tested using 92 different networks 
-                    consisting of 32 activities each from PSPLIB . This has been done to assess the 
+                    consisting of 32 activities each from PSPLIB. This has been done to assess the 
                     performance of the different functions developed in the model while dealing with 
                     different types of problems. Function 1 for computing the state space network, 
                     Function 3 for computing the infinitesimal generator matrix and Function 4 to implement 
