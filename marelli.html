@@ -116,8 +116,8 @@
                     <h2 class="h2_tesi">Industrial Problem</h2>
     
                     <p class="p_tesi">
-                        This section presents an <b>optimization project</b> that han been developed in the Marelli Corbetta plat.
-                        <br> Marelli is an Italian multinational company specialized in the supply of technological products and
+                        This section presents an <b>optimization project</b> that has been developed in the Marelli Corbetta plat.
+                        <br> Marelli is an Italian multinational company specializing in the supply of technological products and
                         systems in the automotive industry. <br>
                         
                         <br> The company's performances are deeply affected by the chip shortage phenomenon. Not only many 
@@ -146,8 +146,8 @@
                     A <b>mathematical model</b> of the problem and a <b>Python optimization tool</b> able to solve it are presented. 
                     The deployed solution follows two macro steps: <br> <br>
     
-                    - <b>Input analysis: </b>  Pdf files reporting the different informations of the PCBs, 
-                    as the eletronics components needed, are analysed and than structured as an Excel database with all 
+                    - <b>Input analysis: </b>  Pdf files reporting the different information of the PCBs, 
+                    as the electronics components needed, are analysed and then structured as an Excel database with all 
                     the data needed to initialize the variables of the model.  <br> <br>
                     
                     - <b>Optimization Model: </b> After the user set production parameters according to the production plan,
@@ -169,32 +169,32 @@
   
                     <p class="p_tesi">
                         The industrial case presents the study that has been carried out with one SMT line in the Corbetta
-                        plant. In particular the analysis focused on the SMT_04 line where 21 product types are processed.  
+                        plant. In particular, the analysis focused on the SMT_04 line where 21 product types are processed.  
                     </p>
   
                     <h3 class="h3_tesi" > Reference System</h3>
   
                     <p class="p_tesi">The mathematical model is focused on the optimization of the setup time for the 
-                        pick-and-place machines, which are part of the SMT (Surface Mounting Thecnology) lines used for the assembly of PCBs 
+                        pick-and-place machines, which are part of the SMT (Surface Mounting Technology) lines used for the assembly of PCBs 
                         for the automotive industry. <br>  <br> The raw PCB is bought from an external 
-                        supplier, while the PCB assembly process, from PCB to PCBA ,  is instead accomplished internally. 
+                        supplier, while the PCB assembly process, from PCB to PCBA, is instead accomplished internally. 
                         The same PCB enters the line twice: once to process 
-                        the top part and once to process the bottom part, since the pick-and-place machine can work on 
-                        only one side at the time. <br> <br> The first operation is the laser marking, where a laser source
+                        the top part and once to process the bottom part since the pick-and-place machine can work on 
+                        only one side at a time. <br> <br> The first operation is the laser marking, where a laser source
                         engraves on each PCB a data matrix code. It is a unique serial number that will be read by each 
-                        equipment in the line to guarantee the traceability of the board in all the process steps. <br> <br>
-                        Then a serigraphic machine performs the screen printing. Stencil and squeegees are used to determine 
+                        piece of equipment in the line to guarantee the traceability of the board in all the process steps. <br> <br>
+                        Then a serigraphic machine performs the screen printing. Stencils and squeegees are used to determine 
                         the pattern with the necessary holes for the deposition of the soldering paste on the PCB. Different 
                         PCBs require a different serigraphic mask, thus, as the product in production changes, a setup of the 
-                        machine is needed. The SPI  is used as a testing equipment to measure the quantity of solder paste on 
-                        each pad, in terms of area, volume and offset. <br> <br> The pick-and-place machines
-                        is used to pick electronic components one by one from a feeder using a vacuum 
+                        machine is needed. The SPI is used as testing equipment to measure the quantity of solder paste on 
+                        each pad, in terms of area, volume, and offset. <br> <br> The pick-and-place machines
+                        are used to pick electronic components one by one from a feeder using a vacuum 
                         nozzle and position them on the PCB. As new PCBs are put in production, all their necessary 
                         component must be loaded through reels in the feeder, and this could be a constraint to the setup 
                         of the machine. <br> <br> The PCBs are then moved to the reflow oven, where the solder paste reflows,
                         soldering the components to the PCB pads. The thermal profile is different for each solder paste alloy 
                         and the specific product to be soldered. Depending on the thermal inertia, the setup between one
-                        product and the other can be quite long. <br> <br> Finally, at the end of SMT line each PCB is inspected 
+                        product and the other can be quite long. <br> <br> Finally, at the end of the SMT line each PCB is inspected 
                         with an AOI  system, that checks if all the components are present and well soldered using the 
                         reconstruction of the images with proper algorithms. This step concludes the assembly process and
                         the PCBA can be mounted on the desired products.
@@ -210,11 +210,11 @@
   
 
                     <p class="p_tesi" > The scope of the project is to act on the production scheduling of SMT04 pick-and-place 
-                        machine, in order to minimize the number and duration of the setups and, thus, maximize the utilization 
+                        machine, to minimize the number and duration of the setups and, thus, maximize the utilization 
                         of the production resources. <br> <br>
 
-                        Each PCB, produced on the SMT_04 line ranges from few hundred to up to 1500 components. 
-                        Beeing the components mounted multiple times a shared among differet products, the PCBs processed 
+                        Each PCB, produced on the SMT_04 line ranges from a few hundred to up to 1500 components. 
+                        Being the components mounted multiple times a shared among different products, the PCBs processed 
                         on SMT04 require overall 395 different component types.
   
   
@@ -256,16 +256,16 @@
                     </div>
                 
   
-                    <p class="p_tesi">The solution deployed has a number of advantages for Marelli:</p>
+                    <p class="p_tesi">The solution deployed has several advantages for Marelli:</p>
 
                     <ul class="tesi_ul">
 
                         <li>It leads to drastic setup time savings. According to the calculations, 
-                            the solution is able to cut setup times by about 47% with respect to 
+                            the solution cuts setup times by about 47% in comparison with 
                             the as-is situation. The optimization of the scheduling also provides 
                             an average increase of the OEE by 9%.</li>
 
-                        <li> It is open software solution. Zero software licence cost.</li>
+                        <li> It is an open software solution. Zero software license cost.</li>
         
                         <li> It is scalable. It can be easily readapted to different SMT line models.</li>
         
@@ -287,14 +287,14 @@
   
                     <h2 class="h2_tesi">Model Details</h2>
   
-                    <p class="p_tesi"> This section present a detail description of the mathematical model 
-                        developement and its implementation. </p>
+                    <p class="p_tesi"> This section presents a detailed description of the mathematical model 
+                        development and its implementation. </p>
   
                     <h3 class="h3_tesi">Mathematical Formulation</h3>
   
-                    <p class="p_tesi"> The mathematicl model ends to be a non linear programming problem with all the 
-                        considered variable belonging to binary space. For this reason a non linear solver has been 
-                        used to get the problem solution. </p>
+                    <p class="p_tesi"> The mathematical model ends to be a non-linear  programming problem with all the 
+                        considered variables belonging to binary space. For this reason, a non-linear solver has been 
+                        used to get the problem solved. </p>
   
                     <div>
                         <h4 class="h4_tesi">Index Definitions:</h4>
@@ -351,20 +351,20 @@
                     <ul class="tesi_ul">
         
                         <li> Minimize the total setup time, that corresponds to the time
-                            to unload and load a feeder multiplied by the number of component 
+                            to unload and load a feeder multiplied by the number of components 
                             changeovers plus the time to adjust the conveyor multiplied by 
                             the number of adjustments of the conveyors. 
                         </li>
             
-                        <li>Available space constraint: for each job k and for each module v, 
+                        <li>Available space constraint: each job k and for each module v, 
                             the number of slots occupied by the loaded components on each module
                             must be lower than the total module capacity (45 slots). Furthermore, 
-                            since the same component type i can be loaded on more than one module,
+                            since the same component type, i can be loaded on more than one module,
                             the P_(i,v,k) variable dynamically selects one module, among the 
                             allowed ones (determined in M_(i,v)), on which the component i will be 
                             loaded according to the available capacity. It is important to note that 
                             the multiplication between variable P_(i,v,k) and x_ik   
-                            makes the problem non linear.
+                            makes the problem non-linear.
                         </li>
         
                         <li>Allocation of the component to the module: this constraint makes sure 
