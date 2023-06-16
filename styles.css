@@ -843,6 +843,7 @@ footer {
 }
 
 .content {
+    position: relative;
     width: calc(50% - 2rem);
     border-radius: 10px;
     padding: 10px;
@@ -857,6 +858,44 @@ footer {
 .show-me:nth-child(n){
     transform: none;
     opacity: 1;
+}
+
+
+.bottoneTimeline {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+ 
+
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    border: 3px solid white;
+    background-color: transparent;
+
+    text-decoration: none;
+    overflow: hidden;
+
+    z-index: 10;
+    transition: transform 0.3s;
+}
+
+.bottoneTimeline:hover {
+    transform: scale(1.2);
+}
+
+.arrowTimeline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 15px;
+    height: 15px;
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
 }
 
 
@@ -881,7 +920,6 @@ footer {
 
     .timeline_section {
         transform: translateX(-5%);
-  
     }
     
     .timeline_section:nth-child(odd){
@@ -891,7 +929,6 @@ footer {
     .top_section{
         padding-bottom:1rem;
     }
-    
 } 
 
 /*************************************************************
