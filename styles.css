@@ -925,6 +925,13 @@ th {
     background-color: wheat;
 }
 
+@media all and (max-width:1200px){
+
+    .contenitoreTabella{
+        padding-top: 30px;
+    }
+}
+
 
 /*************************************************************
  * Info - Contacts
@@ -966,6 +973,7 @@ th {
     .contenitoreContatti{
         flex-direction: column;
         align-items: center;
+        padding-top: 50px;
     }
 
     .contenitoreInformazioni{
